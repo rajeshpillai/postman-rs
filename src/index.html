@@ -7,9 +7,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <div id="login-container" class="container">
+    <header>
+      <h1>Login</h1>
+    </header>
+    <main>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required class="input">
+        <input type="password" id="password" placeholder="Password" required class="input">
+        <button type="submit" class="login-button">Login</button>
+      </form>
+    </main>
+  </div>
+
+  <div id="app-container" class="container hidden">
     <header>
       <h1>Postman Clone</h1>
+      <button id="logout-button" class="logout-button">Logout</button>
     </header>
     <main>
       <form id="request-form">
@@ -41,6 +55,9 @@
       </form>
     </main>
   </div>
-  <script src="main.js"></script>
+
+  <script src="utils.js"></script>
+  <script src="login.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
