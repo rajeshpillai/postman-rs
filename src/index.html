@@ -1,0 +1,37 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postman Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Postman Clone</h1>
+  <form id="request-form">
+    <input type="text" id="url" placeholder="Enter URL" required>
+    <select id="method">
+      <option value="GET">GET</option>
+      <option value="POST">POST</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+      <!-- Add more methods as needed -->
+    </select>
+    <button type="submit">Send Request</button>
+  </form>
+  <div>
+    <h2>Headers</h2>
+    <textarea id="headers" placeholder="Enter headers as JSON"></textarea>
+  </div>
+  <div>
+    <h2>Request Body</h2>
+    <textarea id="request-body" placeholder="Enter request body"></textarea>
+  </div>
+  <div>
+    <h2>Response</h2>
+    <textarea id="response" placeholder="Response will be displayed here..." readonly></textarea>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
