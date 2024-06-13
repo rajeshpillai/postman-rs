@@ -11,9 +11,15 @@
   "tauri": {
     "allowlist": {
       "all": false,
+      "http": {
+        "all": true
+      },
       "shell": {
-        "all": false,
+        "all": true,
         "open": true
+      },
+      "dialog": {
+        "all": true
       }
     },
     "windows": [
